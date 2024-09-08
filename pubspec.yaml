@@ -1,0 +1,49 @@
+name: bird_music
+description: "A new Flutter project."
+publish_to: 'none' 
+
+version: 1.0.2
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  window_manager: ^0.3.7
+  audioplayers: ^6.0.0
+  provider: ^6.0.2
+  audio_video_progress_bar: ^2.0.3
+  isar: ^3.1.0
+  isar_flutter_libs: ^3.1.0
+  file_picker: ^8.0.7
+  http: ^1.2.2
+  cached_network_image: ^3.2.0
+  path_provider: any
+  path: any
+  dio: ^5.6.0
+  id3_codec: ^1.0.3
+  audiotags: ^1.4.1
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  isar_generator: ^3.1.0+1
+  analyzer: ^5.0.0
+  flutter_lints: ^3.0.0
+  build_runner: ^2.2.1
+flutter:
+
+  uses-material-design: true
+  assets:
+    - assets/image/birde.png
+    - assets/image/测试歌曲图片.jpg
+    - assets/image/下箭头.png
+    - assets/image/设置.png
+    - assets/image/full_screen.png
+    - assets/image/normal.png
+    - assets/image/minimize.png
+    - assets/image/shut.png
+    - assets/image/maximize.png
+    - assets/audio/1.mp3
+
