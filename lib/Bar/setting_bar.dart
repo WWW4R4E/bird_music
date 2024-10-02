@@ -139,19 +139,13 @@ class SettingsPageState extends State<SettingsPage> {
   Future<void> _pickFiles(String folderName) async {
     String? selectedDirectory = await FilePicker.platform.getDirectoryPath();
 
-    if (selectedDirectory != null) {
-      setState(() {
-        _filePath = selectedDirectory;
-        _readFolders.add(_filePath);
-        debugPrint("_filePath: $_filePath");
-        saveFolder(folderName, _filePath);
-      });
-    } else {
-      setState(() {
-        _filePath = 'Directory picking cancelled';
-      });
+    setState(() {
+      _filePath = selectedDirectory!;
+      _readFolders.add(_filePath);
+      debugPrint("_filePath: $_filePath");
+      saveFolder(folderName, _filePath);
+    });
     }
-  }
 }
 
 class FolderItem extends StatelessWidget {

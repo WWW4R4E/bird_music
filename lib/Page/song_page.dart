@@ -40,20 +40,12 @@ class _SongPageState extends State<SongPage> {
     return Scaffold(
       body: Stack(
         children: [
-          if (picture != null)
-            Image.memory(
-              picture,
-              fit: BoxFit.cover,
-              width: double.infinity,
-              height: double.infinity,
-            )
-          else
-            Image.asset(
-              'assets/image/birde.png',
-              fit: BoxFit.cover,
-              width: double.infinity,
-              height: double.infinity,
-            ),
+          Image.memory(
+            picture!,
+            fit: BoxFit.cover,
+            width: double.infinity,
+            height: double.infinity,
+          ),
           // 高斯模糊背景
           BackdropFilter(
             filter: ImageFilter.blur(sigmaX: 40, sigmaY: 40),
